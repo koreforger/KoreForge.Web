@@ -1,0 +1,64 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <!-- Build tooling -->
+  <ItemGroup>
+    <PackageVersion Include="MinVer" Version="6.0.0" />
+  </ItemGroup>
+
+  <!-- Microsoft.CodeAnalysis -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers"                      Version="3.3.4"  />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp"                         Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces"              Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Common"                         Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.XUnit"  Version="1.1.1"  />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.XUnit"   Version="1.1.1"  />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common"              Version="4.10.0" />
+  </ItemGroup>
+
+  <!-- Microsoft.EntityFrameworkCore -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore"           Version="10.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory"  Version="10.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite"    Version="10.0.0" />
+  </ItemGroup>
+
+  <!-- Microsoft.Extensions and ASP.NET Core -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer"         Version="10.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing"                      Version="10.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi"                          Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration"                    Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions"       Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection"              Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions"             Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Http"                             Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions"             Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Options.DataAnnotations"          Version="10.0.0" />
+  </ItemGroup>
+
+  <!-- Third-party -->
+  <ItemGroup>
+    <PackageVersion Include="FluentAssertions"          Version="6.12.0" />
+    <PackageVersion Include="NetArchTest.Rules"         Version="1.3.1"  />
+    <PackageVersion Include="Refit"                     Version="9.0.2"  />
+    <PackageVersion Include="Refit.HttpClientFactory"   Version="9.0.2"  />
+    <PackageVersion Include="Swashbuckle.AspNetCore"    Version="6.8.1"  />
+  </ItemGroup>
+
+  <!-- Test packages -->
+  <ItemGroup>
+    <PackageVersion Include="coverlet.collector"        Version="6.0.4"   />
+    <PackageVersion Include="coverlet.msbuild"          Version="6.0.4"   />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk"    Version="17.14.1" />
+    <PackageVersion Include="xunit"                     Version="2.9.3"   />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4"   />
+  </ItemGroup>
+
+</Project>

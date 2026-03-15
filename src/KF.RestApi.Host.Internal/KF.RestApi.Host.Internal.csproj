@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>KF.RestApi.Host.Internal</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KF.RestApi.Common.Observability\KF.RestApi.Common.Observability.csproj" />
+    <ProjectReference Include="..\KF.RestApi.Common.Persistence\KF.RestApi.Common.Persistence.csproj" />
+    <ProjectReference Include="..\..\tst\KF.RestApi.Internal.Sample\KF.RestApi.Internal.Sample.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+</Project>
