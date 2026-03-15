@@ -1,0 +1,6 @@
+@KhaosKode.Web.Authorization.Sample_HostAddress = http://localhost:5151
+
+GET {{KhaosKode.Web.Authorization.Sample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
