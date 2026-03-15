@@ -31,6 +31,9 @@ jobs:
       - name: Test with coverage
         run: |
           dotnet test KoreForge.Web.sln -c Debug --no-build \
+            /p:CollectCoverage=true \
+            /p:CoverletOutputFormat=cobertura \
+            "/p:CoverletOutput=../../out/TestResults/raw/coverage.cobertura.xml" \
             --logger "html;LogFileName=TestResults.html" \
             --results-directory out/TestResults
 
