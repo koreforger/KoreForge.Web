@@ -35,6 +35,7 @@ jobs:
           dotnet pack src/KF.RestApi.Common.Abstractions/KF.RestApi.Common.Abstractions.csproj -c Release --no-build --output artifacts/
           dotnet pack src/KF.RestApi.Common.Observability/KF.RestApi.Common.Observability.csproj -c Release --no-build --output artifacts/
           dotnet pack src/KF.RestApi.Common.Persistence/KF.RestApi.Common.Persistence.csproj -c Release --no-build --output artifacts/
+          dotnet pack src/KF.Web.HealthChecks/KF.Web.HealthChecks.csproj -c Release --no-build --output artifacts/
 
       - name: Push to NuGet
         run: |
