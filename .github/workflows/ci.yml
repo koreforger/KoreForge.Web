@@ -26,11 +26,11 @@ jobs:
         run: dotnet tool restore
 
       - name: Build
-        run: dotnet build KoreForge.Web.sln -c Debug
+        run: dotnet build KoreForge.Web.slnx -c Debug
 
       - name: Test with coverage
         run: |
-          dotnet test KoreForge.Web.sln -c Debug --no-build \
+          dotnet test KoreForge.Web.slnx -c Debug --no-build \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=cobertura \
             "/p:CoverletOutput=../../out/TestResults/raw/coverage.cobertura.xml" \
