@@ -11,6 +11,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.Web.Authorization\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
+    <ProjectReference Include="..\..\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
   </ItemGroup>
 </Project>

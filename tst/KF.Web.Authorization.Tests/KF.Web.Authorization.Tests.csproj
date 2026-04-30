@@ -25,7 +25,7 @@
     <Using Include="Xunit" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.Web.Authorization\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
+    <ProjectReference Include="..\..\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
     <ProjectReference Include="..\KF.Web.Authorization.Sample\KF.Web.Authorization.Sample.csproj" />
   </ItemGroup>
 </Project>

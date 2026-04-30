@@ -1,5 +1,6 @@
 using KF.RestApi.Common.Persistence.Entities;
 using KF.RestApi.Common.Persistence.Options;
+using KF.Time;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -9,11 +10,13 @@ internal sealed class AuditRetentionService : IAuditRetentionService
 {
     private readonly ApiGatewayDbContext _context;
     private readonly AuditStoreOptions _options;
+    private readonly ISystemClock _clock;
 
-    public AuditRetentionService(ApiGatewayDbContext context, IOptions<AuditStoreOptions> options)
+    public AuditRetentionService(ApiGatewayDbContext context, IOptions<AuditStoreOptions> options, ISystemClock clock)
     {
         _context = context;
         _options = options.Value;
+        _clock = clock;
     }
 
     public async Task<int> PurgeExpiredAsync(CancellationToken cancellationToken = default)
@@ -23,7 +26,7 @@ internal sealed class AuditRetentionService : IAuditRetentionService
             return 0;
         }
 
-        var cutoff = DateTimeOffset.UtcNow.AddDays(-_options.RetentionDays.Value);
+        var cutoff = _clock.UtcNow.AddDays(-_options.RetentionDays.Value);
         var total = 0;
 
         var tableMode = _options.TableMode ?? "Single";

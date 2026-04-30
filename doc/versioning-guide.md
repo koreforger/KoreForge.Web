@@ -16,14 +16,14 @@ Example release tag: `KoreForge.Web/v1.4.0`
 
 ## Versioning Scripts
 
-This solution provides automation scripts in the `bin/` folder to manage versions:
+This solution provides automation scripts in the `scr/` folder to manage versions:
 
 ### git-push-nuget.ps1
 
 Creates a release tag and pushes it to trigger NuGet publication:
 
 ```powershell
-.\bin\git-push-nuget.ps1 -Version 1.2.0 -Note "Add new feature"
+.\scr\git-push-nuget.ps1 -Version 1.2.0 -Note "Add new feature"
 ```
 
 This script:
@@ -44,14 +44,14 @@ This script:
 
 1. Ensure the working tree is clean and all tests pass:
    ```powershell
-   .\bin\build-test-codecoverage.ps1
+   .\scr\build-test-codecoverage.ps1
    ```
 
 2. Decide the new SemVer (MAJOR.MINOR.PATCH) according to the rules above.
 
 3. Create and push the release tag:
    ```powershell
-   .\bin\git-push-nuget.ps1 -Version 1.2.0 -Note "Short description"
+   .\scr\git-push-nuget.ps1 -Version 1.2.0 -Note "Short description"
    ```
 
 4. The CI `publish-nuget.yml` workflow will build, test, pack, and push all three packages to NuGet automatically.
@@ -62,7 +62,7 @@ This script:
 - These builds are suitable for internal consumption, previews, or testing feeds but should not be published as official releases.
 - To publish a preview release, use a pre-release tag like `1.4.0-beta.1`:
   ```powershell
-  .\bin\git-push-nuget.ps1 -Version 1.4.0-beta.1 -Note "Preview release"
+  .\scr\git-push-nuget.ps1 -Version 1.4.0-beta.1 -Note "Preview release"
   ```
 
 ## Do's and Don'ts
@@ -83,10 +83,10 @@ This script:
 | Scenario | Command |
 | --- | --- |
 | Check current version | `git describe --tags --match 'KoreForge.Web/v*'` |
-| Breaking change release | `.\bin\git-push-nuget.ps1 -Version 2.0.0 -Note "..."` |
-| New feature release | `.\bin\git-push-nuget.ps1 -Version 1.3.0 -Note "..."` |
-| Bug fix / patch release | `.\bin\git-push-nuget.ps1 -Version 1.2.1 -Note "..."` |
-| Preview/beta release | `.\bin\git-push-nuget.ps1 -Version 1.4.0-beta.1 -Note "..."` |
+| Breaking change release | `.\scr\git-push-nuget.ps1 -Version 2.0.0 -Note "..."` |
+| New feature release | `.\scr\git-push-nuget.ps1 -Version 1.3.0 -Note "..."` |
+| Bug fix / patch release | `.\scr\git-push-nuget.ps1 -Version 1.2.1 -Note "..."` |
+| Preview/beta release | `.\scr\git-push-nuget.ps1 -Version 1.4.0-beta.1 -Note "..."` |
 
 ## Relation to Other KoreForge Libraries
 

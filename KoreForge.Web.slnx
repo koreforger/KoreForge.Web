@@ -1,0 +1,30 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/KF.RestApi.Common.Abstractions/KF.RestApi.Common.Abstractions.csproj" />
+    <Project Path="src/KF.RestApi.Common.Analyzers/KF.RestApi.Common.Analyzers.csproj" />
+    <Project Path="src/KF.RestApi.Common.Observability/KF.RestApi.Common.Observability.csproj" />
+    <Project Path="src/KF.RestApi.Common.Persistence/KF.RestApi.Common.Persistence.csproj" />
+    <Project Path="src/KF.RestApi.Host.Internal/KF.RestApi.Host.Internal.csproj" />
+    <Project Path="src/KF.Web.Authorization/KF.Web.Authorization.csproj" />
+    <Project Path="src/KF.Web.HealthChecks/KF.Web.HealthChecks.csproj" />
+  </Folder>
+  <Folder Name="/tst/">
+    <Project Path="tst/KF.RestApi.Architecture.ApiModuleSeed.Tests/KF.RestApi.Architecture.ApiModuleSeed.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Architecture.Sample.Tests/KF.RestApi.Architecture.Sample.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Client.Sample/KF.RestApi.Client.Sample.csproj" />
+    <Project Path="tst/KF.RestApi.Common.Abstractions.Tests/KF.RestApi.Common.Abstractions.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Common.Analyzers.Tests/KF.RestApi.Common.Analyzers.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Common.Observability.Tests/KF.RestApi.Common.Observability.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Common.Persistence.Tests/KF.RestApi.Common.Persistence.Tests.csproj" />
+    <Project Path="tst/KF.RestApi.Domain.Sample/KF.RestApi.Domain.Sample.csproj" />
+    <Project Path="tst/KF.RestApi.External.Sample/KF.RestApi.External.Sample.csproj" />
+    <Project Path="tst/KF.RestApi.Internal.Sample/KF.RestApi.Internal.Sample.csproj" />
+    <Project Path="tst/KF.Web.Authorization.Sample/KF.Web.Authorization.Sample.csproj" />
+    <Project Path="tst/KF.Web.Authorization.Tests/KF.Web.Authorization.Tests.csproj" />
+  </Folder>
+</Solution>
