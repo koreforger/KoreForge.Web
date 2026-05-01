@@ -48,3 +48,4 @@
     <PackageReference Include="MinVer" PrivateAssets="all" />
   </ItemGroup>
 </Project>
+

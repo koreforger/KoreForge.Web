@@ -6,7 +6,6 @@
     <IsPackable>false</IsPackable>
     <CollectCoverage>true</CollectCoverage>
     <CoverletOutputFormat>cobertura</CoverletOutputFormat>
-    <CoverletOutput>../../out/TestResults/raw/coverage.cobertura.xml</CoverletOutput>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="coverlet.msbuild">
@@ -24,3 +23,4 @@
     <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>
+
