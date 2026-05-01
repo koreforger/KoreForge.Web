@@ -17,10 +17,7 @@
     <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KF.RestApi.Common.Analyzers\KF.RestApi.Common.Analyzers.csproj"
-                      ReferenceOutputAssembly="false"
-                      OutputItemType="Analyzer"
-                      PrivateAssets="all" />
+    <PackageReference Include="KF.RestApi.Common.Analyzers" VersionOverride="1.0.1-alpha" OutputItemType="Analyzer" ReferenceOutputAssembly="false" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\KF.RestApi.Common.Analyzers\bin\$(Configuration)\netstandard2.0\KF.RestApi.Common.Analyzers.dll"

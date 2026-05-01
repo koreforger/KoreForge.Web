@@ -7,9 +7,9 @@
     <AssemblyName>KF.RestApi.Host.Internal</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KF.RestApi.Common.Observability\KF.RestApi.Common.Observability.csproj" />
-    <ProjectReference Include="..\KF.RestApi.Common.Persistence\KF.RestApi.Common.Persistence.csproj" />
-    <ProjectReference Include="..\..\tst\KF.RestApi.Internal.Sample\KF.RestApi.Internal.Sample.csproj" />
+    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.Internal.Sample" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" />

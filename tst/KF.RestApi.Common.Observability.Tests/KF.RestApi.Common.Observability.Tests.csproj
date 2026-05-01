@@ -20,6 +20,6 @@
     <PackageReference Include="xunit.runner.visualstudio" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Observability\KF.RestApi.Common.Observability.csproj" />
+    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>

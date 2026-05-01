@@ -10,7 +10,7 @@
     <PackageTags>rest;api;persistence;entityframework;aspnetcore</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KF.RestApi.Common.Abstractions\KF.RestApi.Common.Abstractions.csproj" />
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KoreForge.Time" />

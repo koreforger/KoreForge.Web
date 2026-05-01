@@ -6,9 +6,9 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Abstractions\KF.RestApi.Common.Abstractions.csproj" />
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Observability\KF.RestApi.Common.Observability.csproj" />
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Persistence\KF.RestApi.Common.Persistence.csproj" />
-    <ProjectReference Include="..\KF.RestApi.External.Sample\KF.RestApi.External.Sample.csproj" PrivateAssets="all" />
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.External.Sample" VersionOverride="1.0.1-alpha" PrivateAssets="all" />
   </ItemGroup>
 </Project>

@@ -11,6 +11,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
+    <PackageReference Include="KoreForge.Web.Authorization" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>

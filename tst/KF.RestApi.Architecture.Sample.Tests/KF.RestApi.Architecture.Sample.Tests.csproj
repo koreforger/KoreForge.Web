@@ -13,9 +13,9 @@
     <PackageReference Include="xunit.runner.visualstudio" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KF.RestApi.Client.Sample\KF.RestApi.Client.Sample.csproj" />
-    <ProjectReference Include="..\KF.RestApi.Domain.Sample\KF.RestApi.Domain.Sample.csproj" />
-    <ProjectReference Include="..\KF.RestApi.External.Sample\KF.RestApi.External.Sample.csproj" />
-    <ProjectReference Include="..\KF.RestApi.Internal.Sample\KF.RestApi.Internal.Sample.csproj" />
+    <PackageReference Include="KF.RestApi.Client.Sample" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.Domain.Sample" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.External.Sample" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.Internal.Sample" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>

@@ -6,8 +6,8 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Abstractions\KF.RestApi.Common.Abstractions.csproj" />
-    <ProjectReference Include="..\KF.RestApi.Domain.Sample\KF.RestApi.Domain.Sample.csproj" />
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.RestApi.Domain.Sample" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />

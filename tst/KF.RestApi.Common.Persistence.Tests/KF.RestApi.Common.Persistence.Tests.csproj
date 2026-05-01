@@ -21,6 +21,6 @@
     <PackageReference Include="xunit.runner.visualstudio" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Persistence\KF.RestApi.Common.Persistence.csproj" />
+    <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>

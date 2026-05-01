@@ -25,7 +25,7 @@
     <Using Include="Xunit" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.Web.Authorization\KF.Web.Authorization.csproj" />
-    <ProjectReference Include="..\KF.Web.Authorization.Sample\KF.Web.Authorization.Sample.csproj" />
+    <PackageReference Include="KoreForge.Web.Authorization" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KF.Web.Authorization.Sample" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>

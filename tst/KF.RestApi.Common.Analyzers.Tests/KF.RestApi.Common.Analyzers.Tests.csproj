@@ -19,6 +19,6 @@
     <PackageReference Include="xunit.runner.visualstudio" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\KF.RestApi.Common.Analyzers\KF.RestApi.Common.Analyzers.csproj" />
+    <PackageReference Include="KF.RestApi.Common.Analyzers" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 </Project>
