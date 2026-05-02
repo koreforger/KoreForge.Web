@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.0.1-alpha" />
+    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="1.0.1-alpha" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Refit" />
+    <PackageReference Include="Refit.HttpClientFactory" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="KoreForge.RestApi.Domain.Sample" />
+  </ItemGroup>
+</Project>

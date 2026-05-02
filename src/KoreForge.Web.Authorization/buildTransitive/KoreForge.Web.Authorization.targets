@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <KoreForgeAuthorizationDocsSource>$(MSBuildThisFileDirectory)docs</KoreForgeAuthorizationDocsSource>
+    <KoreForgeAuthorizationDocsFolderName>KoreForge.Web.Authorization</KoreForgeAuthorizationDocsFolderName>
+    <KoreForgeAuthorizationDocsDestination Condition="'$(SolutionDir)' != ''">
+      $(SolutionDir)docs\$(KoreForgeAuthorizationDocsFolderName)
+    </KoreForgeAuthorizationDocsDestination>
+  </PropertyGroup>
+
+  <Target Name="KoreForgeAuthorizationCopyDocs" AfterTargets="Restore" Condition="'$(KoreForgeAuthorizationDocsDestination)' != '' and Exists('$(KoreForgeAuthorizationDocsSource)')">
+    <ItemGroup>
+      <_KoreForgeAuthorizationDoc Include="$(KoreForgeAuthorizationDocsSource)\**\*" />
+    </ItemGroup>
+    <MakeDir Directories="$(KoreForgeAuthorizationDocsDestination)" />
+    <Copy SourceFiles="@(_KoreForgeAuthorizationDoc)"
+          DestinationFiles="@(_KoreForgeAuthorizationDoc->'$(KoreForgeAuthorizationDocsDestination)\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
+</Project>

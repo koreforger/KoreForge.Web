@@ -36,11 +36,11 @@ jobs:
 
       - name: Pack
         run: |
-          dotnet pack src/KF.Web.Authorization/KF.Web.Authorization.csproj -c Release --no-build -o artifacts/
-          dotnet pack src/KF.RestApi.Common.Abstractions/KF.RestApi.Common.Abstractions.csproj -c Release --no-build -o artifacts/
-          dotnet pack src/KF.RestApi.Common.Observability/KF.RestApi.Common.Observability.csproj -c Release --no-build -o artifacts/
-          dotnet pack src/KF.RestApi.Common.Persistence/KF.RestApi.Common.Persistence.csproj -c Release --no-build -o artifacts/
-          dotnet pack src/KF.Web.HealthChecks/KF.Web.HealthChecks.csproj -c Release --no-build -o artifacts/
+          dotnet pack src/KoreForge.Web.Authorization/KoreForge.Web.Authorization.csproj -c Release --no-build -o artifacts/
+          dotnet pack src/KoreForge.RestApi.Common.Abstractions/KoreForge.RestApi.Common.Abstractions.csproj -c Release --no-build -o artifacts/
+          dotnet pack src/KoreForge.RestApi.Common.Observability/KoreForge.RestApi.Common.Observability.csproj -c Release --no-build -o artifacts/
+          dotnet pack src/KoreForge.RestApi.Common.Persistence/KoreForge.RestApi.Common.Persistence.csproj -c Release --no-build -o artifacts/
+          dotnet pack src/KoreForge.Web.HealthChecks/KoreForge.Web.HealthChecks.csproj -c Release --no-build -o artifacts/
 
       - name: Push to NuGet.org
         run: |

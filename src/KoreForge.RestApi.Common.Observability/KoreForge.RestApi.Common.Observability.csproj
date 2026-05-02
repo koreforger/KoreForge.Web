@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>KoreForge.RestApi.Common.Observability</AssemblyName>
+    <RootNamespace>KoreForge.RestApi.Common.Observability</RootNamespace>
+    <PackageId>KoreForge.Web.RestApi.Observability</PackageId>
+    <Description>REST API observability helpers for KoreForge web applications.</Description>
+    <PackageTags>rest;api;observability;aspnetcore</PackageTags>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.0.1-alpha" />
+  </ItemGroup>
+</Project>

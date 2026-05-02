@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>KoreForge.Web.HealthChecks</AssemblyName>
+    <RootNamespace>KoreForge.Web.HealthChecks</RootNamespace>
+    <PackageId>KoreForge.Web.HealthChecks</PackageId>
+    <Description>Health check contracts, standard endpoint wiring, and well-known tag constants for KoreForge ASP.NET Core applications.</Description>
+    <PackageTags>healthchecks;aspnetcore;koreforge;kubernetes</PackageTags>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>
