@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KoreForge.RestApi.Common.Analyzers" VersionOverride="1.0.1-alpha" OutputItemType="Analyzer" ReferenceOutputAssembly="false" PrivateAssets="all" />
+    <PackageReference Include="KoreForge.RestApi.Common.Analyzers" VersionOverride="1.1.2" OutputItemType="Analyzer" ReferenceOutputAssembly="false" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup Condition="'$(KoreForgeComponentBinRoot)' == ''">
     <None Include="..\KoreForge.RestApi.Common.Analyzers\bin\$(Configuration)\netstandard2.0\KoreForge.RestApi.Common.Analyzers.dll" Pack="true" PackagePath="analyzers/dotnet/cs" />
