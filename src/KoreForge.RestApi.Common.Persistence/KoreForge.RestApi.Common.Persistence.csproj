@@ -11,10 +11,10 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="1.1.2" />
+    <PackageReference Include="KoreForge.Web.RestApi.Abstractions" VersionOverride="0.0.11-alpha.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KoreForge.Time" VersionOverride="1.1.2" />
+    <PackageReference Include="KoreForge.Time" VersionOverride="0.0.11-alpha.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />

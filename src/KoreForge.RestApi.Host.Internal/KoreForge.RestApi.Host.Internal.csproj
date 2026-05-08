@@ -8,9 +8,9 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="1.1.2" />
-    <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="1.1.2" />
-    <PackageReference Include="KoreForge.RestApi.Internal.Sample" VersionOverride="1.1.2" />
+    <PackageReference Include="KoreForge.Web.RestApi.Observability" VersionOverride="0.0.11-alpha.0" />
+    <PackageReference Include="KoreForge.Web.RestApi.Persistence" VersionOverride="0.0.11-alpha.0" />
+    <PackageReference Include="KoreForge.RestApi.Internal.Sample" VersionOverride="0.0.11-alpha.0" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" />
